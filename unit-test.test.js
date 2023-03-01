@@ -83,7 +83,19 @@ describe("Calculator test",()=>{
 })
 
 describe("capitalize",()=>{
-    it("It's capitalized",()=>{
-        expect(capitalize("nahom")).toBe("Nahom")
+    describe("given a string",()=>{
+        it("Not Empty string",()=>{
+            expect(capitalize("nahom")).toBe("Nahom")
+        })
+        it("Empty string",()=>{
+            expect(capitalize("")).toBe("Empty string")
+        })
+    })
+    describe("given not a string",()=>{
+        it("Throws an Error",()=>{
+            expect(()=>capitalize(1)).toThrow(Error)
+            expect(()=>capitalize(undefined)).toThrow(Error)
+            expect(()=>capitalize()).toThrow(Error)
+        })
     })
 })
