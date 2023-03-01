@@ -1,6 +1,7 @@
 const exerciseOne=require('./exercise-1')
 const exerciseTwo=require('./exercise-2')
 const Calculator=require('./exercise-3')
+const capitalize=require('./exercise-4')
 
 // For the first Exercise
 it("length meet the conditions",()=>{
