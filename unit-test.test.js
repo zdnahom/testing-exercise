@@ -80,3 +80,9 @@ describe("Calculator test",()=>{
         })
     })
 })
+
+describe("capitalize",()=>{
+    it("It's capitalized",()=>{
+        expect(capitalize("nahom")).toBe("Nahom")
+    })
+})
