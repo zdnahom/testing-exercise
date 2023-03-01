@@ -1,3 +1,4 @@
-export const stringLength=(str)=>{
+const stringLength=(str)=>{
     return str.length
 }
+module.exports = stringLength;
